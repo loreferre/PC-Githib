@@ -1,0 +1,15 @@
+
+1.git init 
+// crea localmente el respositorio en nuesta carpeta
+
+2. git add .
+// indicamos los archivos que vamos a sebir al github 
+
+3. git comit -m "agregar archivos"
+// generar rl punto de guardado (la version de guardo)
+
+4. git remote add origin url-del-github-aenlazar
+// Se enlazo el respositorio de tu compu con el repositorio de github
+
+5. git push -u origin maim
+// Enviar los cambios al respositorio

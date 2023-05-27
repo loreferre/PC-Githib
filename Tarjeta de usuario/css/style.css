@@ -1,0 +1,59 @@
+
+body{
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border: 3px solid rgb(226, 218, 218)
+
+}
+header{
+    background-color: rgb(127, 190, 190);
+    position: relative;
+    height: 80px;
+}
+
+.imagenTarjeta{
+    width: 80px;
+    position: absolute;
+    left: 50px;
+    top: 40px;
+}
+main{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center
+
+
+}
+
+.nombre{
+    margin-top: 20px;
+}
+
+.map{
+    width: 15px;
+    position: fixed;
+    top: 182px;
+
+
+}
+.ciudad {
+    margin-left: 20px;
+    margin-bottom: 15px;
+
+
+}
+.editar{
+    margin-left: 21px;
+    margin-top: -28px;
+}
+.gear {
+    width: 15px;
+    padding: 10px;
+    padding-left: 1px;
+}

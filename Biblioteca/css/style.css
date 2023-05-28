@@ -1,0 +1,110 @@
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  /* Clase fixed-width container que se "autocentrará" a sí misma */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    background-color: mediumaquamarine;
+    padding: 100px;
+    border: 1px solid plum
+
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around ;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; 
+}
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.col  {
+    border: 1pc solid rgb(205, 255, 209);
+    background-color: darkorchid;
+    color: deepskyblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    width: 120px;
+    text-align: center;
+    margin: 5px;
+    float: left;
+
+
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    font-family: 'Wix Madefor Display', sans-serif;
+    background-color: rgb(71, 69, 69);
+}
+
+
+.nav-links{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-right: 10px;
+}
+
+li{
+    padding: 10px 5px;
+    width: 120px;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+
+.nav-title{
+    text-align: start;
+    color: white;
+    padding-left: 15px;
+}
+
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    margin-right: 15px;
+}

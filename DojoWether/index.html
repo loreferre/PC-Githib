@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>WetherDojo</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="nav">
+                <h1 class="title">Dojo Wether</h1>
+                <ul class="cities">
+                    <li onclick="changeCity(this)">Burbank</li>
+                    <li onclick="changeCity(this)">Chicago</li>
+                    <li onclick="changeCity(this)">Dallas</li>
+                </ul>
+            </nav>
+            <main>
+                <div class="CurrentCity">
+                    <h2>San Jose</h2>
+                    <div>
+                        <span>Show Temperature in </span>
+                        <select onchange="changeMetric(this)">
+                            <option value="celcius">C°</option>
+                            <option value="farenhait">F°</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <div class="day">
+                        <h3>Today</h3>
+                        <img class="weatherimage" src="images/assets/some_rain.png" alt="rain">
+                        <div class="description">Some Rain</div>
+                        <div class="Temperatures">
+                            <div class="maxTemp">
+                                <span class="max">24</span>°
+                            </div>
+                            <div class="minTemp">
+                                <span class="min">18</span>°
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h3>Tomorrow</h3>
+                        <img class="weatherimage" src="images/assets/some_sun.png" alt="sun">
+                        <div class="description">Some Sun</div>
+                        <div class="Temperatures">
+                            <div class="maxTemp">
+                                <span class="max">27</span>°
+                            </div>
+                            <div class="minTemp">
+                                <span class="min">19</span>°
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h3>Friday</h3>
+                        <img class="weatherimage" src="images/assets/some_clouds.png" alt="clouds">
+                        <div class="description">Some Clouds</div>
+                        <div class="Temperatures">
+                            <div class="maxTemp">
+                                <span class="max">21</span>°
+                            </div>
+                            <div class="minTemp">
+                                <span class="min">16</span>°
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h3>Saturday</h3>
+                        <img class="weatherimage" src="images/assets/some_sun.png" alt="sunny">
+                        <div class="description">Some Sun</div>
+                        <div class="Temperatures">
+                            <div class="maxTemp">
+                                <span class="max">26</span>°
+                            </div>
+                            <div class="minTemp">
+                                <span class="min">
+                                    <span class="min">21</span>°
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <div class="cookie">
+                <img src="images/assets/cookie.png" alt="Cookie image">
+                <div>
+                    <h3>Stop! Cookie Time</h3>
+                    <p>
+                        We use cookies (sadly not the edible ones) to personalize 
+                        content and ads, to provide social media features and to
+                        analyse our traffic. <a href="#"> Read more...</a>
+                    </p>
+                    <button onclick="acceptCookie(this)">I Accept</button>
+                </div>
+            </div>
+            <script src="./JabaScript/index.js"></script>
+        </body>
+    </html>

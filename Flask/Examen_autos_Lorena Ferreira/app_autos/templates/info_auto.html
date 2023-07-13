@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-end mt-3">
+            <div class="col-auto">
+                <form action="/dashboard" method="GET">
+                    <button type="submit" class="btn btn-info">Home</button>
+                </form>
+            </div>
+            <div class="col-auto">
+                <form action="/logout" method="POST">
+                    <button type="submit" class="btn btn-primary">Logout</button>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-8">
+                <h2 class="card-title">${{auto.precio}}</h2>
+            </div>
+        </div>
+        <div class="card w-100 p-3 mt-4">
+            <div class="row">
+                <div class="col-4">
+                    <p class="card-text">Modelo:</p>
+                </div>
+                <div class="col-8">
+                    <p class="card-text">{{auto.modelo}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p class="card-text">Marca:</p>
+                </div>
+                <div class="col-8">
+                    <p class="card-text">{{auto.marca}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p class="card-text">Año:</p>
+                </div>
+                <div class="col-8">
+                    <p class="card-text">{{auto.año}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p class="card-text">Descripción:</p>
+                </div>
+                <div class="col-8">
+                    <p class="card-text">{{auto.descripcion}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <h3 class="card-subtitle mb-2 text-muted">Vendedor: {{auto.usuario.nombre}} {{auto.usuario.apellido}}</h3>
+                </div>
+                {% if auto.id_usuario == session['id_usuario'] %}
+                <div class="col-8">
+                    <form action="/eliminar_auto/{{auto.id}}" method="POST" class="d-inline-block">
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                    </form>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
